@@ -8,6 +8,24 @@ ssh-add -K KeyPathOrKeyName // 添加到钥匙串
 ssh -T git@github.com // 测试是否成功
 
 同一台电脑对应多个GitHub账号的解决方法：https://www.jianshu.com/p/12badb7e6c10
+思路是在.ssh/config文件中添加多个Host与IdentifyFile的对照：
+
+```shell
+  #Default GitHub
+  Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+  Host github-personal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_personal
+```
+
+
+
+
 
 
 
