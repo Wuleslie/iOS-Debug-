@@ -23,7 +23,16 @@ ssh -T git@github.com // 测试是否成功
   IdentityFile ~/.ssh/id_rsa_personal
 ```
 
+#### git仓库设置
 
+git config --list // 查看git配置
+git config --global user.name "userName" // 全局配置
+git config --global user.email "xxx@xx.com"
+git config user.name "userName" // 只配置当前项目
+git config user.email "xxx@xx.com"
+
+git remote -v // 查看远程仓库地址
+git remote set-url origin https://github.com/user/repo2.git // 修改远程仓库地址，可切换shh、http
 
 
 
