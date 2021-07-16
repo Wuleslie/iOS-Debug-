@@ -9,3 +9,8 @@
 #### 上架国家与地区
 
 Apple审核通过后，如果立即将App的状态变为Ready for Sale，可能在App Store上搜不到，从Connect应用中点击View on App Store，提示App Not Available，如下图。这时可以确认下自己的App的发放范围，默认是全部国家和地区。如果确认设置无误，那就稍作等待，延迟一会儿（大约半个小时）就能在App Store搜到。有任何问题，可联系[苹果技术支持](https://developer.apple.com/contact/topic/select)，选择自己的问题类型，会有客服致电或者邮件跟进。
+
+#### 查看iOS系统版本占比
+
+https://developer.apple.com/support/app-store/
+
