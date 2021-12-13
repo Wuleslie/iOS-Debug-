@@ -34,9 +34,22 @@ git config user.email "xxx@xx.com"
 git remote -v // 查看远程仓库地址
 git remote set-url origin https://github.com/user/repo2.git // 修改远程仓库地址，可切换shh、http
 
+#### .gitignore文件配置
 
+cd到工程目录下
 
+```shell
+touch .gitignore
+open .gitignore
+```
 
+然后输入想要忽略的文件即可，一般iOS的配置见<https://github.com/github/gitignore/blob/main/Objective-C.gitignore>
+
+针对userinterfacestate.xcuserstate文件，如果已经已经出现，那么可以通过如下命令清楚：
+
+```shell
+git rm --cached [YourProjectName].xcodeproj/project.xcworkspace/xcuserdata/[YourUsername].xcuserdatad/UserInterfaceState.xcuserstate 
+```
 
 
 
